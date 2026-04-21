@@ -19,4 +19,4 @@ jobs:
         pip install pylint
     - name: Run Pylint
       run: |
-        pylint agent/agent.py --fail-under=7.0
+        cd agent && pylint agent.py --fail-under=7.0
